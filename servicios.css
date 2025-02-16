@@ -97,14 +97,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     width: 150px;
-    transition: all 0.2s ease-in-out; /*transición suave*/
-}
-.button:hover{
-    cursor: pointer;
-}
-.button:active{
-    transform: scale(0.95); /* Hace que el botón se reduzca un poco */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
 }
 .parrafo3, .parrafo2{
     display:flex;
