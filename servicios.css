@@ -1,0 +1,125 @@
+/*font: playfair display */ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*font: poppins*/ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font: inter*/@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*font: montserrat*/@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #5eaff5;
+    --secondary-color: #f5e2be;
+    --dark-blue: #264773;
+    --dark-green: #043A40;
+    --light-gray: #F2F2F2;
+    --soft-black:#0f0c0c; 
+}
+h1, h2, h3 {
+    font-family: 'playfair display', serif; /* Fuente para títulos */
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+body {
+    font-family: poppins, inter;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 0;
+    line-height: 1.6;
+}
+.cuadros{
+    margin-top: 70px;
+}
+.cuadros > div{
+    border: 5px solid var(--light-gray);
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.capacitar img, .taller img {
+    height: 450px;
+    width: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.denuncias img{
+    height: 800px;
+    width: 550px;
+    padding-left: 10px;
+}
+.parrafo {
+    border: none;
+}
+.capacitar, .taller, .denuncias{
+    height: auto;
+    /*display: flex;
+    flex: row;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+form{
+    display: flex;
+    flex-flow:column wrap;
+    width:220px;
+}
+input, textarea {
+    width: 200px;
+    padding: 8px; /* Espacio interno */
+    margin: 5px 0; /* Espacio entre los elementos */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de letra */
+    text-decoration: none;
+}
+input:focus, textarea:focus{
+    outline: 2px solid var(--dark-green);
+    background-color: #f2f2f2; /* Cambia el fondo */
+    border: 2px solid var(--primary-color); /* Borde amarillo */
+    transform: scale(1.02); /* Hace un pequeño zoom */
+}
+button {
+    background-color: var(--dark-green); /* turqueza */
+    color: var(--light-gray);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    transition: all 0.2s ease-in-out; /*transición suave*/
+}
+.button:hover{
+    cursor: pointer;
+}
+.button:active{
+    transform: scale(0.95); /* Hace que el botón se reduzca un poco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
+}
+.parrafo3, .parrafo2{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.capacitar img, .taller img, .denuncias img{
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.taller img:hover, .denuncias img:hover, .capacitar img:hover{
+    transform: scale(1.1) translateY(-5px); /* Aumenta tamaño y sube */
+}
+/*.less{
+    font-size: 0.875ram;
+}*/
